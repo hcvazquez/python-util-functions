@@ -52,7 +52,6 @@ if __name__ == '__main__':
     print(sys.getsizeof([]))
     print(sys.getsizeof(()))
 
-
     ten_millon_list = [x for x in range(1000)]
     ten_millon_tuple = tuple(ten_millon_list)
     ten_millon_arr = arr.array('i', ten_millon_list)

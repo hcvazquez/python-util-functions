@@ -28,3 +28,7 @@ if __name__ == '__main__':
     write_global_error()
     write_global()
     write_enclosing_global()
+    help(sum)
+    print(dir(write_enclosing_global))
+    arr = [1,2,3,4,5]
+    print(arr[3:2:-1])

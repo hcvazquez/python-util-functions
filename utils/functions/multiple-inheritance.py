@@ -6,14 +6,12 @@ class B(object):
     def foo(self):
         print('B.foo()')
 
-class C(B, A):
+class C(A, B):
     def foo(self):
         print('C.foo()')
-        #A.foo(self)
-        #B.foo(self)
         super().foo()
-        super(C, self).foo()
         
 print("multiple")
 c = C()
-print(c.foo())
+c.foo()
+print(C.__mro__)
